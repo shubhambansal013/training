@@ -8,5 +8,6 @@ function(callback){
   callback(null,2);
 }],
 function(error,results){
+  if(error) throw error;
   console.log(results);
 });
